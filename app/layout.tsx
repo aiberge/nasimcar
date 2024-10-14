@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nassim Car",
   description: "Location de voitures au Maroc",
+  icons: [
+    { rel: 'icon', url: '/favicon.ico' },
+
+  ],
 };
 
 export default function RootLayout({
@@ -16,13 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="icon"
-          href="/favicon1.ico"
-          sizes="any"
-        />
-      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

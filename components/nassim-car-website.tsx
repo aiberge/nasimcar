@@ -108,6 +108,13 @@ export function NassimCarWebsite() {
     })
   }
 
+  // Add this debugging code inside the NassimCarWebsite component, just before the return statement
+  useEffect(() => {
+    console.log('Environment:', process.env.NODE_ENV);
+    console.log('Base URL:', process.env.NEXT_PUBLIC_BASE_URL);
+    // Log any other relevant environment variables
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 z-50">
