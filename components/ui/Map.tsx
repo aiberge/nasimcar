@@ -2,6 +2,7 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import Image from 'next/image'
 
 interface MapProps {
   selectedLocation: string | null;
@@ -50,21 +51,29 @@ const Map: React.FC<MapProps> = ({ selectedLocation }) => {
   const selectedCenter = selectedLocation ? locations[selectedLocation] : center
 
   return (
-    <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%' }}>
-      <ChangeView center={selectedCenter} zoom={selectedLocation ? 15 : zoom} />
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    <div className="relative w-full h-[400px]">
+      <Image
+        src="/carens_lrg.jpg"
+        alt="Map of Carens"
+        fill
+        style={{ objectFit: 'cover' }}
       />
-      {Object.entries(locations).map(([name, position]) => (
-        <CustomMarker 
-          key={name} 
-          position={position} 
-          name={name}
-          icon={selectedLocation === name ? selectedIcon : defaultIcon}
+      <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%' }}>
+        <ChangeView center={selectedCenter} zoom={selectedLocation ? 15 : zoom} />
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-      ))}
-    </MapContainer>
+        {Object.entries(locations).map(([name, position]) => (
+          <CustomMarker 
+            key={name} 
+            position={position} 
+            name={name}
+            icon={selectedLocation === name ? selectedIcon : defaultIcon}
+          />
+        ))}
+      </MapContainer>
+    </div>
   )
 }
 

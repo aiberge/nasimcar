@@ -369,15 +369,6 @@ export function NassimCarWebsite() {
             <h3 className="text-2xl font-bold text-red-600 mb-2">San Diego Car's</h3>
             <p className="text-sm">La meilleure expérience de location de <span className="font-bold text-red-600">voitures</span> à San Diego</p>
           </div>
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2">Liens Rapides</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-red-600 transition duration-300">Accueil</a></li>
-              <li><a href="#" className="hover:text-red-600 transition duration-300">Nos Voitures</a></li>
-              <li><a href="#" className="hover:text-red-600 transition duration-300">Tarifs</a></li>
-              <li><a href="#" className="hover:text-red-600 transition duration-300">Contact</a></li>
-            </ul>
-          </div>
           <div className="w-full md:w-1/3">
             <h4 className="text-lg font-semibold mb-2">Suivez-nous</h4>
             <div className="flex space-x-4">
