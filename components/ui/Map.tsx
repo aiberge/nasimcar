@@ -8,7 +8,7 @@ interface MapProps {
 }
 
 const locations: { [key: string]: [number, number] } = {
-  'Oujda': [34.67559288144534, -1.8712196431600692],
+  'Oujda': [34.67256186777404, -1.8913967853817935],
 }
 
 function ChangeView({ center, zoom }: { center: [number, number]; zoom: number }) {
@@ -30,19 +30,19 @@ const CustomMarker: React.FC<{ position: [number, number]; name: string; icon: L
 }
 
 const Map: React.FC<MapProps> = ({ selectedLocation }) => {
-  const center: [number, number] = [34.67559288144534, -1.8712196431600692] 
+  const center: [number, number] = [34.672716389260486, -1.8913117004934976] 
   const zoom = 25 // Default zoom level
 
   const defaultIcon = L.icon({
-    iconUrl: '/image.png',
+    iconUrl: '/logocar.png',
     iconSize: [100, 116],
     iconAnchor: [22, 61],
     popupAnchor: [0, -61],
   })
 
   const selectedIcon = L.icon({
-    iconUrl: '/selected-marker.png',
-    iconSize: [35, 57],
+    iconUrl: '/logocar.png',
+    iconSize: [15, 37],
     iconAnchor: [17, 57],
     popupAnchor: [0, -57],
   })
