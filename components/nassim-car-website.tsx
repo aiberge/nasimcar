@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Logo from '@/public/logocar.png'
+import Logo from '@/public/imgesr.png'
 import dynamic from 'next/dynamic'
 
 interface Car {
@@ -100,7 +100,7 @@ export function NassimCarWebsite() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-    })
+    }) 
   }
 
   // Add this debugging code inside the NassimCarWebsite component, just before the return statement
@@ -114,7 +114,7 @@ export function NassimCarWebsite() {
     <div className="min-h-screen bg-black text-white">
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 z-50">
         <div className="flex items-center">
-          <Image src={Logo} alt="San Diego Car's Logo" width={120} height={120} className="mr-2" />
+          <Image src={Logo} alt="SOUL.CAR Logo" width={120} height={120} className="mr-2" />
         </div>
         <div className="space-x-4">
           <button
@@ -144,7 +144,7 @@ export function NassimCarWebsite() {
             <section className="relative h-screen">
               <div className="absolute inset-0 bg-gradient-to-r from-black to-red-900 animate-gradient-x"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-                <h2 className="text-5xl font-bold mb-8 text-white">Bienvenue chez <span className="text-[#FC0F1D]">San Diego Car's</span></h2>
+                <h2 className="text-5xl font-bold mb-8 text-white">Bienvenue chez <span className="text-[#FC0F1D]">SOUL.CAR</span></h2>
                 <button
                   className="bg-red-600 text-white px-8 py-3 rounded-full text-xl hover:bg-red-700 transition duration-300"
                   onClick={() => {
@@ -260,7 +260,7 @@ export function NassimCarWebsite() {
             className="min-h-screen pt-20 px-4 md:px-8 bg-gray-900"
           >
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold mb-8 text-center">À Propos de San Diego Car's</h2>
+              <h2 className="text-4xl font-bold mb-8 text-center">À Propos de SOUL.CAR</h2>
               <div className="mb-12 relative overflow-hidden rounded-lg">
                 <iframe
                   width="100%"
@@ -280,7 +280,7 @@ export function NassimCarWebsite() {
                 >
                   <h3 className="text-2xl font-semibold mb-4">Notre Mission</h3>
                   <p className="text-gray-300">
-                    Chez San Diego Car's, notre mission est de fournir une expérience de location de voiture exceptionnelle,
+                    Chez SOUL.CAR, notre mission est de fournir une expérience de location de voiture exceptionnelle,
                     alliant confort, flexibilité et service client de premier ordre.
                   </p>
                 </motion.div>
@@ -300,7 +300,7 @@ export function NassimCarWebsite() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir Nassim Car ?</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir SOUL.CAR ?</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-300">
                     <li>Flotte de véhicules récents et bien entretenus</li>
                     <li>Options flexibles de location</li>
@@ -322,17 +322,17 @@ export function NassimCarWebsite() {
                     <h4 className="text-xl font-semibold mb-2">Nos Bureaux</h4>
                     <p className="text-gray-300">
                       123 Main Street<br />
-                      San Diego, CA 92101<br />
-                      États-Unis
+                      Oujda, 60000<br />
+                      Maroc
                     </p>
                     <div className="mt-4 space-y-2">
                       <div className="flex items-center">
                         <Phone className="w-5 h-5 mr-2 text-red-600" />
-                        <span>+1 (619) 123-4567</span>
+                        <span>+212 5 36 12 34 56</span>
                       </div>
                       <div className="flex items-center">
                         <Mail className="w-5 h-5 mr-2 text-red-600" />
-                        <span>contact@sandiegocars.com</span>
+                        <span>contact@soul.car</span>
                       </div>
                     </div>
                   </div>
@@ -366,8 +366,8 @@ export function NassimCarWebsite() {
       <footer className="bg-gray-900 text-white py-8 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 mb-6 md:mb-0 md:pr-8">
-            <h3 className="text-2xl font-bold text-red-600 mb-2">San Diego Car's</h3>
-            <p className="text-sm">La meilleure expérience de location de <span className="font-bold text-red-600">voitures</span> à San Diego</p>
+            <h3 className="text-2xl font-bold text-red-600 mb-2">SOUL.CAR</h3>
+            <p className="text-sm">La meilleure expérience de location de <span className="font-bold text-red-600">voitures</span> au Maroc</p>
           </div>
           <div className="w-full md:w-1/3">
             <h4 className="text-lg font-semibold mb-2">Suivez-nous</h4>
@@ -391,7 +391,7 @@ export function NassimCarWebsite() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; 2024 San Diego Car's. Tous droits réservés.</p>
+          <p>&copy; 2024 SOUL.CAR. Tous droits réservés.</p>
         </div>
       </footer>
 
@@ -460,7 +460,7 @@ export function NassimCarWebsite() {
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold">Confirmation de réservation</DialogTitle>
             <DialogDescription>
-              <p className="mt-4">Merci d'avoir choisi <span className="text-red-600 font-bold">San Diego Car's</span> pour votre location de voiture.</p>
+              <p className="mt-4">Merci d'avoir choisi <span className="text-red-600 font-bold">SOUL.CAR</span> pour votre location de voiture.</p>
               <p className="mt-2">Pour finaliser votre réservation, veuillez nous contacter par l'un des moyens suivants :</p>
               <div className="mt-6 space-y-4">
                 <Button className="w-full bg-green-600 hover:bg-green-700" onClick={() => window.open('https://wa.me/212536123456', '_blank')}>

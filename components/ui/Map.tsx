@@ -9,7 +9,7 @@ interface MapProps {
 }
 
 const locations: { [key: string]: [number, number] } = {
-  'Oujda': [34.67256186777404, -1.8913967853817935],
+  'SOUL.CAR': [34.67256186777404, -1.8913967853817935],
 }
 
 function ChangeView({ center, zoom }: { center: [number, number]; zoom: number }) {
@@ -23,7 +23,7 @@ const CustomMarker: React.FC<{ position: [number, number]; name: string; icon: L
     <Marker position={position} icon={icon}>
       <Popup>
         <div style={{ textAlign: 'center' }}>
-          <strong>Nassim Car {name}</strong>
+          <strong>SOUL.CAR {name}</strong>
         </div>
       </Popup>
     </Marker>
@@ -54,7 +54,7 @@ const Map: React.FC<MapProps> = ({ selectedLocation }) => {
     <div className="relative w-full h-[400px]">
       <Image
         src="/carens_lrg.jpg"
-        alt="Map of Carens"
+        alt="Map of SOUL.CAR"
         fill
         style={{ objectFit: 'cover' }}
       />
