@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Logo from '@/public/imgesr.png'
+import Logo from '@/public/jeffallogo.png'
 import dynamic from 'next/dynamic'
 
 interface Car {
@@ -28,21 +28,21 @@ interface Car {
 }
 
 const cars = [
-  { id: 1, name: 'Kia Picanto', seats: 4, luggage: 1, transmission: 'Manuelle', price: 250, unlimited: true, type: 'Économique', location: 'Oujda', ac: true, image: '/picanto_5_door_lrg (1).jpg', speed: 160, trunk: 200 },
-  { id: 2, name: 'Toyota Yaris', seats: 5, luggage: 2, transmission: 'Automatique', price: 300, unlimited: true, type: 'Économique', location: 'Berkane', ac: true, image: '/picanto_5_door_lrg.jpg', speed: 180, trunk: 280 },
-  { id: 3, name: 'Renault Clio', seats: 5, luggage: 2, transmission: 'Manuelle', price: 280, unlimited: false, type: 'Économique', location: 'Nador', ac: true, image: '/duster_lrg.jpg', speed: 170, trunk: 300 },
-  { id: 4, name: 'Peugeot 308', seats: 5, luggage: 3, transmission: 'Automatique', price: 350, unlimited: true, type: 'Compacte', location: 'Oujda', ac: true, image: '/duster_lrg.jpg', speed: 200, trunk: 420 },
-  { id: 5, name: 'Volkswagen Golf', seats: 5, luggage: 2, transmission: 'Manuelle', price: 320, unlimited: true, type: 'Compacte', location: 'Berkane', ac: true, image: '/duster_lrg.jpg', speed: 210, trunk: 380 },
-  { id: 6, name: 'Ford Focus', seats: 5, luggage: 2, transmission: 'Automatique', price: 330, unlimited: false, type: 'Compacte', location: 'Nador', ac: true, image: '/picanto_5_door_lrg (1).jpg', speed: 195, trunk: 375 },
-  { id: 7, name: 'Hyundai Tucson', seats: 5, luggage: 4, transmission: 'Automatique', price: 400, unlimited: true, type: 'SUV', location: 'Oujda', ac: true, image: '/duster_lrg.jpg', speed: 180, trunk: 620 },
-  { id: 8, name: 'Nissan Qashqai', seats: 5, luggage: 3, transmission: 'Manuelle', price: 380, unlimited: true, type: 'SUV', location: 'Berkane', ac: true, image: '/carens_lrg.jpg', speed: 190, trunk: 580 },
-  { id: 9, name: 'Renault Captur', seats: 5, luggage: 2, transmission: 'Automatique', price: 340, unlimited: false, type: 'SUV', location: 'Nador', ac: true, image: '/duster_lrg.jpg', speed: 175, trunk: 450 },
-  { id: 10, name: 'Mercedes Classe C', seats: 5, luggage: 2, transmission: 'Automatique', price: 500, unlimited: true, type: 'Luxe', location: 'Oujda', ac: true, image: '/duster_lrg.jpg', speed: 250, trunk: 480 },
-  { id: 11, name: 'BMW Série 3', seats: 5, luggage: 2, transmission: 'Automatique', price: 520, unlimited: true, type: 'Luxe', location: 'Berkane', ac: true, image: '/carens_lrg.jpg', speed: 250, trunk: 480 },
-  { id: 12, name: 'Audi A4', seats: 5, luggage: 2, transmission: 'Automatique', price: 510, unlimited: true, type: 'Luxe', location: 'Nador', ac: true, image: '/duster_lrg.jpg', speed: 250, trunk: 460 },
-  { id: 13, name: 'Fiat 500', seats: 4, luggage: 1, transmission: 'Manuelle', price: 240, unlimited: false, type: 'Économique', location: 'Oujda', ac: false, image: '/picanto_5_door_lrg (1).jpg', speed: 160, trunk: 185 },
-  { id: 14, name: 'Opel Corsa', seats: 5, luggage: 2, transmission: 'Manuelle', price: 260, unlimited: true, type: 'Économique', location: 'Berkane', ac: true, image: '/duster_lrg.jpg', speed: 170, trunk: 285 },
-  { id: 15, name: 'Dacia Duster', seats: 5, luggage: 3, transmission: 'Manuelle', price: 290, unlimited: true, type: 'SUV', location: 'Nador', ac: true, image: '/picanto_5_door_lrg (1).jpg', speed: 180, trunk: 475 },
+  { id: 1, name: 'Kia Picanto', seats: 4, luggage: 1, transmission: 'Manuelle', price: 250, unlimited: true, type: 'Économique', location: 'Oujda', ac: true, image: '/kia.jpg', speed: 160, trunk: 200 },
+  { id: 2, name:  'Mercedes Classe C', seats: 5, luggage: 2, transmission: 'Automatique', price: 500, unlimited: true, type: 'Luxe', location: 'Oujda', ac: true, image: '/mercedes.jpg', speed: 250, trunk: 480 },
+  { id: 3, name: 'Renault Clio', seats: 5, luggage: 2, transmission: 'Manuelle', price: 280, unlimited: false, type: 'Économique', location: 'Nador', ac: true, image: '/clio.jpeg', speed: 170, trunk: 300 },
+  { id: 4, name: 'Peugeot 308', seats: 5, luggage: 3, transmission: 'Automatique', price: 350, unlimited: true, type: 'Compacte', location: 'Oujda', ac: true, image: '/OIP.jpeg', speed: 200, trunk: 420 },
+  { id: 5, name: 'Volkswagen Golf', seats: 5, luggage: 2, transmission: 'Manuelle', price: 320, unlimited: true, type: 'Compacte', location: 'Berkane', ac: true, image: '/R.jpeg', speed: 210, trunk: 380 },
+  { id: 6, name:'Kia Picanto', seats: 4, luggage: 1, transmission: 'Manuelle', price: 250, unlimited: true, type: 'Économique', location: 'Oujda', ac: true, image: '/kia.jpg', speed: 160, trunk: 200 },
+  { id: 7, name: 'Kia Picanto', seats: 4, luggage: 1, transmission: 'Manuelle', price: 250, unlimited: true, type: 'Économique', location: 'Oujda', ac: true, image: '/kia.jpg', speed: 160, trunk: 200 },
+  { id: 8, name: 'Dacia Duster', seats: 5, luggage: 3, transmission: 'Manuelle', price: 290, unlimited: true, type: 'SUV', location: 'Nador', ac: true, image: '/dacia.jpeg', speed: 180, trunk: 475 },
+  { id: 9, name: 'Peugeot 308', seats: 5, luggage: 3, transmission: 'Automatique', price: 350, unlimited: true, type: 'Compacte', location: 'Oujda', ac: true, image: '/OIP.jpeg', speed: 200, trunk: 420 },
+  { id: 10, name: 'Mercedes Classe C', seats: 5, luggage: 2, transmission: 'Automatique', price: 500, unlimited: true, type: 'Luxe', location: 'Oujda', ac: true, image: '/mercedes.jpg', speed: 250, trunk: 480 },
+  { id: 11, name: 'Kia Picanto', seats: 4, luggage: 1, transmission: 'Manuelle', price: 250, unlimited: true, type: 'Économique', location: 'Oujda', ac: true, image: '/kia.jpg', speed: 160, trunk: 200 },
+  { id: 12, name: 'Audi A4', seats: 5, luggage: 2, transmission: 'Automatique', price: 510, unlimited: true, type: 'Luxe', location: 'Nador', ac: true, image: '/audi a4.jpg', speed: 250, trunk: 460 },
+  { id: 13, name: 'Volkswagen Golf', seats: 5, luggage: 2, transmission: 'Manuelle', price: 320, unlimited: true, type: 'Compacte', location: 'Berkane', ac: true, image: '/R.jpeg', speed: 210, trunk: 380 },
+  { id: 14,  name:'Renault Clio', seats: 5, luggage: 2, transmission: 'Manuelle', price: 280, unlimited: false, type: 'Économique', location: 'Nador', ac: true, image: '/clio.jpeg', speed: 170, trunk: 300 },
+  { id: 15, name: 'Dacia Duster', seats: 5, luggage: 3, transmission: 'Manuelle', price: 290, unlimited: true, type: 'SUV', location: 'Nador', ac: true, image: '/dacia.jpeg', speed: 180, trunk: 475 },
 ]
 
 const MapWithNoSSR = dynamic(() => import('@/components/ui/Map'), {
@@ -91,7 +91,7 @@ export function NassimCarWebsite() {
   }
 
   const copyPhoneNumber = () => {
-    navigator.clipboard.writeText('+212 5 36 12 34 56')
+    navigator.clipboard.writeText('+212 661-551965')
     toast.success('Numéro de téléphone copié!', {
       position: "bottom-right",
       autoClose: 2000,
@@ -114,7 +114,7 @@ export function NassimCarWebsite() {
     <div className="min-h-screen bg-black text-white">
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 z-50">
         <div className="flex items-center">
-          <Image src={Logo} alt="SOUL.CAR Logo" width={120} height={120} className="mr-2" />
+          <Image src={Logo} alt="Maherloc Jeffal Car Logo" width={200} height={200} className="mr-2" />
         </div>
         <div className="space-x-4">
           <button
@@ -144,7 +144,7 @@ export function NassimCarWebsite() {
             <section className="relative h-screen">
               <div className="absolute inset-0 bg-gradient-to-r from-black to-red-900 animate-gradient-x"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-                <h2 className="text-5xl font-bold mb-8 text-white">Bienvenue chez <span className="text-[#FC0F1D]">SOUL.CAR</span></h2>
+                <h2 className="text-5xl font-bold mb-8 text-white">Bienvenue chez <span className="text-red-600 font-bold italic">Maherloc Jeffal Car</span></h2>
                 <button
                   className="bg-red-600 text-white px-8 py-3 rounded-full text-xl hover:bg-red-700 transition duration-300"
                   onClick={() => {
@@ -260,7 +260,7 @@ export function NassimCarWebsite() {
             className="min-h-screen pt-20 px-4 md:px-8 bg-gray-900"
           >
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold mb-8 text-center">À Propos de SOUL.CAR</h2>
+              <h2 className="text-4xl font-bold mb-8 text-center">À Propos de <span className="text-red-600 font-bold italic">Maherloc Jeffal Car</span></h2>
               <div className="mb-12 relative overflow-hidden rounded-lg">
                 <iframe
                   width="100%"
@@ -280,7 +280,7 @@ export function NassimCarWebsite() {
                 >
                   <h3 className="text-2xl font-semibold mb-4">Notre Mission</h3>
                   <p className="text-gray-300">
-                    Chez SOUL.CAR, notre mission est de fournir une expérience de location de voiture exceptionnelle,
+                    Chez Maherloc Jeffal Car, notre mission est de fournir une expérience de location de voiture exceptionnelle,
                     alliant confort, flexibilité et service client de premier ordre.
                   </p>
                 </motion.div>
@@ -300,7 +300,7 @@ export function NassimCarWebsite() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir SOUL.CAR ?</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir Maherloc Jeffal Car ?</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-300">
                     <li>Flotte de véhicules récents et bien entretenus</li>
                     <li>Options flexibles de location</li>
@@ -328,11 +328,11 @@ export function NassimCarWebsite() {
                     <div className="mt-4 space-y-2">
                       <div className="flex items-center">
                         <Phone className="w-5 h-5 mr-2 text-red-600" />
-                        <span>+212 5 36 12 34 56</span>
+                        <span>+212 661-551965</span>
                       </div>
                       <div className="flex items-center">
                         <Mail className="w-5 h-5 mr-2 text-red-600" />
-                        <span>contact@soul.car</span>
+                        <span>contact@Maherloc Jeffal Car</span>
                       </div>
                     </div>
                   </div>
@@ -366,7 +366,7 @@ export function NassimCarWebsite() {
       <footer className="bg-gray-900 text-white py-8 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 mb-6 md:mb-0 md:pr-8">
-            <h3 className="text-2xl font-bold text-red-600 mb-2">SOUL.CAR</h3>
+            <h3 className="text-2xl font-bold text-red-600 mb-2">Maherloc Jeffal Car</h3>
             <p className="text-sm">La meilleure expérience de location de <span className="font-bold text-red-600">voitures</span> au Maroc</p>
           </div>
           <div className="w-full md:w-1/3">
@@ -391,7 +391,7 @@ export function NassimCarWebsite() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
-          <p>&copy; 2024 SOUL.CAR. Tous droits réservés.</p>
+          <p>&copy; 2024 Maherloc Jeffal Car. Tous droits réservés.</p>
         </div>
       </footer>
 
@@ -460,7 +460,7 @@ export function NassimCarWebsite() {
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold">Confirmation de réservation</DialogTitle>
             <DialogDescription>
-              <p className="mt-4">Merci d'avoir choisi <span className="text-red-600 font-bold">SOUL.CAR</span> pour votre location de voiture.</p>
+              <p className="mt-4">Merci d'avoir choisi <span className="text-red-600 font-bold">Maherloc Jeffal Car</span> pour votre location de voiture.</p>
               <p className="mt-2">Pour finaliser votre réservation, veuillez nous contacter par l'un des moyens suivants :</p>
               <div className="mt-6 space-y-4">
                 <Button className="w-full bg-green-600 hover:bg-green-700" onClick={() => window.open('https://wa.me/212536123456', '_blank')}>
@@ -470,7 +470,7 @@ export function NassimCarWebsite() {
                 <div className="flex items-center space-x-2">
                   <Button className="flex-grow bg-blue-600 hover:bg-blue-700">
                     <Phone className="mr-2" />
-                    +212 5 36 12 34 56
+                    +212 661-551965
                   </Button>
                   <Button className="bg-gray-700 hover:bg-gray-600" onClick={copyPhoneNumber}>
                     <Copy className="w-5 h-5" />

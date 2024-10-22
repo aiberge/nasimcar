@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SOUL.CAR",
+  title: "Maherloc Jeffal Car",
   description: "Location de voitures au Maroc",
   icons: [
     { rel: 'icon', url: '/favicon.ico' },
