@@ -31,18 +31,18 @@ const CustomMarker: React.FC<{ position: [number, number]; name: string; icon: L
 }
 
 const Map: React.FC<MapProps> = ({ selectedLocation }) => {
-  const center: [number, number] = [34.672716389260486, -1.8913117004934976] 
+  const center: [number, number] = [34.668250831672566, -1.9074964903758977] 
   const zoom = 25 // Default zoom level
 
   const defaultIcon = L.icon({
-    iconUrl: '/logocar.png',
+    iconUrl: '/pin.png',
     iconSize: [100, 116],
     iconAnchor: [22, 61],
     popupAnchor: [0, -61],
   })
 
   const selectedIcon = L.icon({
-    iconUrl: '/logocar.png',
+    iconUrl: '/pin.png',
     iconSize: [15, 37],
     iconAnchor: [17, 57],
     popupAnchor: [0, -57],
