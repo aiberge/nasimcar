@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Logo from '@/public/jeffallogo.png'
+import Logo from '@/public/jeffalogo.png'
 import dynamic from 'next/dynamic'
 
 interface Car {
@@ -300,7 +300,7 @@ export function NassimCarWebsite() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir Maherloc Jeffal Car ?</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Pourquoi choisir <span className="text-red-600 font-bold italic">Maherloc Jeffal Car</span> ?</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-300">
                     <li>Flotte de véhicules récents et bien entretenus</li>
                     <li>Options flexibles de location</li>
@@ -321,9 +321,9 @@ export function NassimCarWebsite() {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Nos Bureaux</h4>
                     <p className="text-gray-300">
-                      123 Main Street<br />
-                      Oujda, 60000<br />
-                      Maroc
+                    <a href="https://maps.app.goo.gl/p4LqkVufFhSbhoCx9" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-red-600 transition duration-300">
+                      N 3, BD EL MAHDAOUI BENSAID LOT BENAHMIDA ET EL AMRI, Oujda 60000
+                    </a>
                     </p>
                     <div className="mt-4 space-y-2">
                       <div className="flex items-center">
